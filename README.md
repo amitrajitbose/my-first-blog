@@ -25,4 +25,10 @@ Use command, **python manage.py makemigrations blog** (where *blog* is the name 
 Then you need to apply the migration file to the database, use: **python manage.py migrate blog**
 
 - Learn about [DJANGO MODEL REFERENCE](https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types)
+
 - Learn about [DJANGO ADMIN](https://docs.djangoproject.com/en/2.0/ref/contrib/admin/)
+- Learn about [DJANGO DEPLOYMENT CHECKLIST](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/). These are important for maintaining the security issue of the application.
+
+- Learn about [URLconf](https://docs.djangoproject.com/en/2.0/topics/http/urls/).
+
+- Learn about [DJANGO Views](https://docs.djangoproject.com/en/2.0/topics/http/views/).
