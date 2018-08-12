@@ -24,6 +24,5 @@ Use this command, **python manage.py runserver**
 Use command, **python manage.py makemigrations blog** (where *blog* is the name of the newly created model)
 Then you need to apply the migration file to the database, use: **python manage.py migrate blog**
 
-- Learn about DJANGO MODEL REFERENCE [here](https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types)
-
--Learn about DJANGO ADMIN [here](https://docs.djangoproject.com/en/2.0/ref/contrib/admin/)
+- Learn about [DJANGO MODEL REFERENCE](https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types)
+- Learn about [DJANGO ADMIN](https://docs.djangoproject.com/en/2.0/ref/contrib/admin/)
