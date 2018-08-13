@@ -34,3 +34,6 @@ Then you need to apply the migration file to the database, use: **python manage.
 - Learn about [DJANGO Views](https://docs.djangoproject.com/en/2.0/topics/http/views/).
 
 - To make changes to the website, I first push the changes to this repo. Then I go the host server webpage and pull the changes to the respective directory. Then I reload the page.
+
+- Learn about [query sets](https://docs.djangoproject.com/en/2.0/ref/models/querysets/#date). [Here](https://stackoverflow.com/questions/5245307/django-date-filter-gte-and-lte) is a good question regarding chaining similar type of queries by of different properties. Also check this out about [Django ORMs](https://www.fullstackpython.com/object-relational-mappers-orms.html).
+
