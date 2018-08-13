@@ -32,3 +32,5 @@ Then you need to apply the migration file to the database, use: **python manage.
 - Learn about [URLconf](https://docs.djangoproject.com/en/2.0/topics/http/urls/).
 
 - Learn about [DJANGO Views](https://docs.djangoproject.com/en/2.0/topics/http/views/).
+
+- To make changes to the website, I first push the changes to this repo. Then I go the host server webpage and pull the changes to the respective directory. Then I reload the page.
