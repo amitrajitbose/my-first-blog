@@ -1,18 +1,24 @@
+{% load static %}
 <html>
     <head>
         <title>Cuppa & Code</title>
         <meta charset="utf-8">
+        <!-- The two lines below are for bootstrap -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
+
     <body>
         <div>
-            <h1 style="font-size: 40px; text-align: center;">☕ Cuppa & Code 💻</h1>
-            <h3 style="text-align: center;">Amitrajit Bose</h3>
+            <h1><a href="/">☕ Cuppa & Code 💻</a></h1>
+            <h4>Amitrajit Bose</h4>
             <p>Have a Cup of Tea. Sit back & relax! <br>Blog will be live soon.. !</p>
         </div>
 
         {% for post in posts %}
             <div>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
                 <p>
                     <em>Published: {{ post.published_date }}</em>
