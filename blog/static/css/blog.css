@@ -16,6 +16,7 @@ h2{
     margin-top: 20px;
     margin-bottom: 5px;
     font-size: 26px;
+    font-weight: 900;
 }
 
 h3{
@@ -43,4 +44,14 @@ h3:hover{
 .postbody{
     padding-left: 15px;
     padding-right: 15px;
+}
+.footer{
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #b3ffb3;
+    text-align: center;
+    text-shadow: black;
+    padding-top: 1%;
 }
