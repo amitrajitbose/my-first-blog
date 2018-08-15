@@ -92,10 +92,12 @@ h3:hover{
 .footer{
     font-family: 'Montserrat', sans-serif;
     position: fixed;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    left: 0;
     bottom: 0;
     width: 100%;
     background-color: #b3ffb3;
-    text-align: center;
     text-shadow: black;
-    padding-top: 1%;
 }
