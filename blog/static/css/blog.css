@@ -90,6 +90,7 @@ h3:hover{
     padding-bottom: 0px;
 }
 .footer{
+    font-size: 12px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     display: flex;
@@ -99,4 +100,14 @@ h3:hover{
     width: 100%;
     background-color: #b3ffb3;
     text-shadow: black;
+}
+@media(max-width: 510px){
+    .footer{
+        font-size: 8px;
+    }
+}
+@media(min-width:511px and max-width: 720px){
+    .footer{
+        font-size: 9px;
+    }
 }
