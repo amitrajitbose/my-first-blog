@@ -41,9 +41,17 @@ h3:hover{
     font-size: 23px;
 }
 
+
+.socialProfiles{
+    display: flex !important;
+    justify-content: center;
+    text-align: center;
+}
+
 .postbody{
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 0px;
 }
 .footer{
     font-family: 'Montserrat', sans-serif;
