@@ -3,18 +3,23 @@
     <head>
         <title>Cuppa & Code</title>
         <meta charset="utf-8">
+        <meta name="description" content="Blog">
+        <meta name="keywords" content="Programming,Coding,Technology,Python,Django,HTML,CSS,Machine,Learning,Data,Science">
+        <meta name="author" content="Amitrajit Bose">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- The two lines below are for bootstrap -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         <link rel="shortcut icon" type="image/png" href="{% static 'images/teaFavicon.png' %}"/>
+        <!-- This line includes the Google font called Montserrat -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
 
     <body>
         <div>
             <h1>☕ Cuppa & Code 💻</h1>
-            <h4>Amitrajit Bose</h4>
-            <p>Have a Cup of Tea. Sit back & relax! <br>Blog will be live soon.. !</p>
+            <h3>Amitrajit Bose</h3>
         </div>
 
         {% for post in posts %}

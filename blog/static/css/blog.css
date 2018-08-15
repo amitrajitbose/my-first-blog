@@ -1,8 +1,33 @@
 h1{
-        font-family: Calibri;
-        background-color: #80ffd4;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #b3ffb3;
         text-align: center;
         text-shadow: black;
         padding: 3%;
+        margin-top: 0%;
+        margin-bottom: 0%;
         font-size: 60px;
+        transition: font-size 0.5s;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+        background-color: #99ff99;
+        text-align: center;
+        text-shadow: black;
+        padding: 1%;
+        margin-top: 0%;
+        transition: font-size 0.5s;
+}
+
+@media(max-width: 768px){
+    h1{
+        font-size: 32px;
     }
+    h3{
+        font-size: 19px;
+    }
+}
+h3:hover{
+    font-size: 23px;
+}
