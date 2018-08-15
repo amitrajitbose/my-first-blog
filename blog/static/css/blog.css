@@ -91,7 +91,6 @@ h3:hover{
 }
 .footer{
     font-family: 'Montserrat', sans-serif;
-    position: fixed;
     text-align: center;
     display: flex;
     justify-content: space-around;
