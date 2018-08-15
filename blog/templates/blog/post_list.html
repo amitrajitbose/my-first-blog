@@ -23,21 +23,21 @@
         </div>
 
         <div class="socialProfiles">
-            <img src="https://png.icons8.com/ios/50/000000/google-logo-filled.png" alt="G-Mail" height="25" width=auto> 
-            <img src="https://png.icons8.com/ios-glyphs/60/000000/github.png" alt="Github" height="25" width=auto>
-            <img src="https://png.icons8.com/ios-glyphs/60/000000/linkedin-circled.png" alt="LinkedIn" height="25" width=auto>
-            <img src="https://png.icons8.com/ios-glyphs/60/000000/twitter.png" alt="Twitter" height="25" width=auto>
-            <img src="https://png.icons8.com/ios-glyphs/60/000000/facebook.png" alt="Facebook" height="25" width=auto>
-            <img src="https://png.icons8.com/windows/64/000000/wordpress.png" alt="Wordpress" height="25" width=auto>
-            <img src="https://png.icons8.com/ios/64/000000/stackoverflow-filled.png" alt="Stack Overflow" height="25" width=auto>
-            <img src="https://png.icons8.com/ios-glyphs/64/000000/resume.png" alt="Portfolio"  height="25" width=auto>
+            <a href="mailto:amitrajitbose9@gmail.com" target="_blank"><img src="https://png.icons8.com/ios/50/000000/google-logo-filled.png" class="btn-goog" alt="G-Mail" height="25" width=auto></a>
+            <a href="https://github.com/amitrajitbose" target="_blank"><img src="https://png.icons8.com/ios-glyphs/60/000000/github.png" class="btn-git" alt="Github" height="25" width=auto></a>
+            <a href="https://www.linkedin.com/in/amitrajitbose" target="_blank"><img src="https://png.icons8.com/ios-glyphs/60/000000/linkedin-circled.png" class="btn-linkd" alt="LinkedIn" height="25" width=auto></a>
+            <a href="https://twitter.com/AmitrajitBose" target="_blank"><img src="https://png.icons8.com/ios-glyphs/60/000000/twitter.png" class="btn-tweet" alt="Twitter" height="25" width=auto></a>
+            <a href="https://www.facebook.com/amitrajit.bose" target="_blank"><img src="https://png.icons8.com/ios-glyphs/60/000000/facebook.png" class="btn-fb" alt="Facebook" height="25" width=auto></a>
+            <a href="https://amitrajitbose.wordpress.com/" target="_blank"><img src="https://png.icons8.com/windows/64/000000/wordpress.png" class="btn-wp" alt="Wordpress" height="25" width=auto></a>
+            <a href="https://stackoverflow.com/users/6859369/amitrajit-bose" target="_blank"><img src="https://png.icons8.com/ios/64/000000/stackoverflow-filled.png" class="btn-stack" alt="Stack Overflow" height="25" width=auto></a>
+            <a href="https://sites.google.com/view/abose" target="_blank"><img src="https://png.icons8.com/ios-glyphs/64/000000/resume.png" class="btn-port" alt="Portfolio"  height="25" width=auto></a>
         </div>
 
         {% for post in posts %}
             <div class="postbody">
-                <h2><a href="">{{ post.title }}</a></h2>
-                <p>{{ post.text|linebreaksbr }}</p>
-                <p>
+                <h2>{{ post.title }}</h2>
+                <p style="font-family: Calibri; font-size: 16px;">{{ post.text|linebreaksbr }}</p>
+                <p style="font-size: 12px;">
                     <em>Published: {{ post.published_date }}</em>
                 </p>
             </div>
