@@ -1,3 +1,8 @@
-h1 a {
-    color: #FCA205;
-}
+h1{
+        font-family: Calibri;
+        background-color: #80ffd4;
+        text-align: center;
+        text-shadow: black;
+        padding: 3%;
+        font-size: 60px;
+    }
