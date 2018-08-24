@@ -1,56 +1,13 @@
-{% load static %}
-<html>
-    <head>
-        <title>Cuppa & Code</title>
-        <meta charset="utf-8">
-        <meta name="description" content="Blog">
-        <meta name="keywords" content="Programming,Coding,Technology,Python,Django,HTML,CSS,Machine,Learning,Data,Science">
-        <meta name="author" content="Amitrajit Bose">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <!-- The two lines below are for bootstrap -->
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        <link rel="shortcut icon" type="image/png" href="https://png.icons8.com/doodle/50/000000/tea.png"/>
-        <!-- This line includes the Google font called Montserrat -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    </head>
+{% extends 'blog/base.html' %}
 
-    <body>
-        <div>
-            <h1>Cuppa & Code</h1>
-            <h3>Amitrajit Bose</h3>
+{% block content %}
+    {% for post in posts %}
+        <div class="postbody">
+            <h2>{{ post.title }}</h2>
+            <p style="font-family: Calibri; font-size: 16px;">{{ post.text|linebreaksbr }}</p>
+            <p style="font-size: 12px;">
+                <em>Published: {{ post.published_date }}</em>
+            </p>
         </div>
-
-        <div class="socialProfiles">
-            <a href="mailto:amitrajitbose9@gmail.com" target="_blank"><img src="https://png.icons8.com/ios/50/000000/google-logo-filled.png" class="btn-goog" alt="G-Mail" height="25" width=auto></a>
-            <a href="https://github.com/amitrajitbose" target="_blank"><img src="https://png.icons8.com/ios-glyphs/60/000000/github.png" class="btn-git" alt="Github" height="25" width=auto></a>
-            <a href="https://www.linkedin.com/in/amitrajitbose" target="_blank"><img src="https://png.icons8.com/ios-glyphs/60/000000/linkedin-circled.png" class="btn-linkd" alt="LinkedIn" height="25" width=auto></a>
-            <a href="https://twitter.com/AmitrajitBose" target="_blank"><img src="https://png.icons8.com/ios-glyphs/60/000000/twitter.png" class="btn-tweet" alt="Twitter" height="25" width=auto></a>
-            <a href="https://www.facebook.com/amitrajit.bose" target="_blank"><img src="https://png.icons8.com/ios-glyphs/60/000000/facebook.png" class="btn-fb" alt="Facebook" height="25" width=auto></a>
-            <a href="https://amitrajitbose.wordpress.com/" target="_blank"><img src="https://png.icons8.com/windows/64/000000/wordpress.png" class="btn-wp" alt="Wordpress" height="25" width=auto></a>
-            <a href="https://stackoverflow.com/users/6859369/amitrajit-bose" target="_blank"><img src="https://png.icons8.com/ios/64/000000/stackoverflow-filled.png" class="btn-stack" alt="Stack Overflow" height="25" width=auto></a>
-            <a href="https://sites.google.com/view/abose" target="_blank"><img src="https://png.icons8.com/ios-glyphs/64/000000/resume.png" class="btn-port" alt="Portfolio"  height="25" width=auto></a>
-        </div>
-
-        {% for post in posts %}
-            <div class="postbody">
-                <h2>{{ post.title }}</h2>
-                <p style="font-family: Calibri; font-size: 16px;">{{ post.text|linebreaksbr }}</p>
-                <p style="font-size: 12px;">
-                    <em>Published: {{ post.published_date }}</em>
-                </p>
-            </div>
-        {% endfor %}
-        
-        <div class="footer">
-            <p>Icon pack by <a href="https://icons8.com" target="_blank">Icons8</a>
-            <p>|</p>
-            <p>Thanks to Django Girls Organization & Python Any Where</p>
-            <p>|</p>
-            <p>Copyrights Reserved &copy Amitrajit Bose</p>
-            <p>|</p>
-            <p>Fork this on <a href="https://github.com/amitrajitbose/my-first-blog" target="_blank">Github</a></p>
-        </div>
-    </body>
-</html>
+    {% endfor %}
+{% endblock %}
