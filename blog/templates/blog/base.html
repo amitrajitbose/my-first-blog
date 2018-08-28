@@ -32,6 +32,9 @@
             <a href="https://stackoverflow.com/users/6859369/amitrajit-bose" target="_blank"><img src="https://png.icons8.com/ios/64/000000/stackoverflow-filled.png" class="btn-stack" alt="Stack Overflow" height="25" width=auto></a>
             <a href="https://sites.google.com/view/abose" target="_blank"><img src="https://png.icons8.com/ios-glyphs/64/000000/resume.png" class="btn-port" alt="Portfolio"  height="25" width=auto></a>
         </div>
+        <div class="page-header">
+            <a href="{% url 'post_new' %}" class="top-menu">New Post <span class="glyphicon glyphicon-plus"></span></a>
+        </div>
 
         {% block content %}
         {% endblock %}
