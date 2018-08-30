@@ -33,7 +33,8 @@
             <a href="https://sites.google.com/view/abose" target="_blank"><img src="https://png.icons8.com/ios-glyphs/64/000000/resume.png" class="btn-port" alt="Portfolio"  height="25" width=auto></a>
         </div>
         <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu">New Post <span class="glyphicon glyphicon-plus"></span></a>
+            <a style="padding-left: 20px; font-family: 'Montserrat', sans-serif;" href="{% url 'post_list' %}" class="top-menu">Home <span class="glyphicon glyphicon-home"></span></a>
+            <a style="padding-left: 50px; font-family: 'Montserrat', sans-serif;" href="{% url 'post_new' %}" class="top-menu">New <span class="glyphicon glyphicon-plus"></span></a>
         </div>
 
         {% block content %}
