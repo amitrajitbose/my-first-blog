@@ -34,7 +34,9 @@
         </div>
         <div class="page-header">
             <a style="padding-left: 20px; font-family: 'Montserrat', sans-serif;" href="{% url 'post_list' %}" class="top-menu">Home <span class="glyphicon glyphicon-home"></span></a>
-            <a style="padding-left: 50px; font-family: 'Montserrat', sans-serif;" href="{% url 'post_new' %}" class="top-menu">New <span class="glyphicon glyphicon-plus"></span></a>
+            {% if user.is_authenticated %}
+                <a style="padding-left: 50px; font-family: 'Montserrat', sans-serif;" href="{% url 'post_new' %}" class="top-menu">New <span class="glyphicon glyphicon-plus"></span></a>
+            {% endif %}
         </div>
 
         {% block content %}
